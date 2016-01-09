@@ -9,4 +9,5 @@ RUN set -x \
   && apk del $buildDeps \
   && rm -rf /var/cache/apk/* /tmp/*
 
+EXPOSE 1025 8025
 ENTRYPOINT ["MailHog"]
